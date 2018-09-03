@@ -60,4 +60,8 @@
 
 14. Generar modulo
 
-	ng generate module login
+	ng generate module 
+	
+15. Crear modulo y relacionarlo con otro
+
+	ng generate module name --module other-module
