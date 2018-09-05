@@ -65,3 +65,7 @@
 15. Crear modulo y relacionarlo con otro
 
 	ng generate module name --module other-module
+
+16. Generar interfaces
+
+	ng generate interface /path
