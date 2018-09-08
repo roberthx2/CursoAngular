@@ -1,24 +1,21 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Apod } from '../model/apod';
+import { Observable } from 'rxjs';
+
+const APOD_URL = 'https://api.nasa.gov/planetary/apod';
+const API_KEY = 'DEMO_KEY';
 
 @Injectable({
   providedIn: 'root'
 })
 export class NasaApiService {
 
-  private readonly DATA: Apod = {
-    date: '2017-11-08',
-    explanation: 'asd',
-    hdurl: 'https://proyectopuente.com.mx/wp-content/uploads/2016/08/nasa.jpg',
-    media_type: 'rfv',
-    service_version: 'dd',
-    title: 'Titulo',
-    url: 'https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/10/15/09/NASA-5.jpg'
-  }
+  constructor(private httpClient: HttpClient) { }
 
-  constructor() { }
-
-  getApod(): Apod {
-    return this.DATA;
+  getApod(): Observable<Apod> {
+    //return this.httpClient.get<Apod>(APOD_URL + '?api_key=' + API_KEY);
+    //Template Literals
+    return this.httpClient.get<Apod>(`${APOD_URL}?api_key=${API_KEY}`);
   }
 }

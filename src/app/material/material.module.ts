@@ -8,6 +8,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { MaterialDemoComponent } from './material-demo/material-demo.component';
 import { MaterialButtonComponent } from './material-button/material-button.component';
@@ -25,7 +26,8 @@ import { ItemEstudianteComponent } from './material-list/item-estudiante/item-es
     MatInputModule,
     MatFormFieldModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatProgressSpinnerModule
   ],
   exports: [
     MatToolbarModule,
@@ -35,7 +37,8 @@ import { ItemEstudianteComponent } from './material-list/item-estudiante/item-es
     MatInputModule,
     MatFormFieldModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatProgressSpinnerModule
   ],
   declarations: [MaterialDemoComponent, MaterialButtonComponent, MaterialInputComponent, MaterialListComponent, ItemEstudianteComponent]
 })
