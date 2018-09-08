@@ -69,3 +69,11 @@
 16. Generar interfaces
 
 	ng generate interface /path
+
+17. Generar servicio
+
+	ng generate service /path --module other-module
+
+18. Generar pipe
+
+	ng generate pipe /path --module other-module
