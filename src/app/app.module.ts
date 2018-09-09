@@ -10,6 +10,7 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { MaterialModule } from './material/material.module';
 import { HomeComponent } from './home/home.component';
 import { LowerCasePipe } from './shared/pipes/lower-case.pipe';
+import { MarsModule } from './mars/mars.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LowerCasePipe } from './shared/pipes/lower-case.pipe';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    MarsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
